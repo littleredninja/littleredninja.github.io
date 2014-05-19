@@ -67,7 +67,11 @@ h1 {
 img {
 	width: 150px;
 	border-radius: 50%;
-	border: 5px solid #dee469;
+	border: 10px solid #dee469;
+}
+
+img:hover {
+	opacity: .5;
 }
 
 #footer {
