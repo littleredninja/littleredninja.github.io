@@ -99,6 +99,7 @@ nav li {
 	margin-left: 3%;
 	margin-right: 3%;
 	display: inline-block;
+	vertical-align: top;
 	border: 2px dotted #ebebeb;
 	border-radius: 20px;
 	/*background-color: blue;*/
@@ -113,7 +114,7 @@ nav li {
 	padding: 3%;
 	margin-left: 3%;
 	display: inline-block;
-	float: right;
+	vertical-align: top;
 	/*background-color: red;*/
 }
 
@@ -149,4 +150,5 @@ footer {
 	background-color: rgba(235, 235, 235, .5);
 	text-align: center;
 	padding: 20px 0;
+	clear: both;
 }
