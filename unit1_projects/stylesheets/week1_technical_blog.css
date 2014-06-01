@@ -51,3 +51,7 @@ a {
 	color: #6ef1f1;
 	text-decoration: none;
 }
+
+.bold {
+	font-weight: bold;
+}
