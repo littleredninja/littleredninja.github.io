@@ -29,9 +29,12 @@ date {
 	border-radius: 8px;
 	padding: 5px 5px;
 	font-size: 1em;
+	margin: auto;
+	display: block;
+	text-align: center;
 }
 
-#container img {
+.largeimg {
 	display: block;
 	width: 400px;
 	margin-left: auto;
