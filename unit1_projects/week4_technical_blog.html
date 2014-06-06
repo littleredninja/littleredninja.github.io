@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week3_technical_blog.css">
+		<title>Jennie's Tech Blog</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1 id="header">Let's get Loopy</h1>
+			<h2 id="subheader">While, until, loop, for, times and each</h2>
+			<date>Friday, June 6, 2014</date>
+			<img class="logo" src="images/ruby-logo.png">
+			<p>Lots of times in programs, you'll need code to perform a block of code over and over.  This can be accomplished in several different ways.  We'll look over some simple examples of while, until, loop, for, times and each.</p>
+			<h3 class="blog">While, Until and Loop</h3>
+				<p>While, until and loop perform actions until a condition is met.  These are good for instances when you don't know how many times you'll have to loop.  But look out, because you'll need to make sure that at some point the loop's conditions can be met, otherwise you'll end up with an infinite loop, which will cause you're program to crash.</p>
+				<p class="code">number = 1
+				<br>while number < 5
+				<br>&nbsp;&nbsp;puts number
+				<br>&nbsp;&nbsp;number += 1
+				<br>end</p>
+				<p>The above example will puts the number until 4, at which point it will stop because number will no longer be &lt; 5.</p>
+				<p class="code">number = 1
+				<br>until number > 5
+				<br>&nbsp;&nbsp;puts number
+				<br>&nbsp;&nbsp;number += 1
+				<br>end</p>
+				<p>The until loops works exactly like the while loop, but it needs the opposite condition.  It will print 1 through 5, because it will not evaluate to false until the number gets to 6.<p>
+				<p>The loop method defines its conditional by saying "break if" then naming the condition.</p>
+				<p class="code">number = 1
+				<br>loop do
+				<br>&nbsp;&nbsp;number += 1
+				<br>&nbsp;&nbsp;puts number
+				<br>&nbsp;&nbsp;break if number >= 5 
+				<br>end</p>
+			<h3 class="blog">For and Times</h3>
+				<p>For and times loops are useful for instances when you know how many times you'll need to perform a specific action.  For also lets you include a range of numbers, so you can start and stop when you'd like.</p>
+				<p class="code">for var in 1..5
+				<br>&nbsp;&nbsp;puts var
+				<br>end</p>
+				<p>Times is a built-in Ruby method that lets you perform a block a definite number of times.  It looks like this:</p>
+				<p class="code">5.times { puts "Hello, world!" }</p>
+			<h3 class="blog">Each</h3>
+				<p>The each method allows you to perform an action on each item in a collection.  Since it can be used on arrays and hashes, this makes it very powerful for looping through elements in those objects.</p>
+				<p class="code">array.each { |x| puts x } </p>
+			<h3 class="blog">Loopy Things to Look At</h3>
+				<ul>
+					<li><a href="http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/" target="_blank">Good article covering different types of loops</a></li>
+					<li><a href="http://www.codecademy.com/courses/ruby-beginner-en-XYcN1/0/1?curriculum_id=5059f8619189a5000201fbcb" target="_blank">Codecademy course on Ruby Loops</a></li>
+				</ul>
+
+		</div>
+
+	</body>
+</html>
