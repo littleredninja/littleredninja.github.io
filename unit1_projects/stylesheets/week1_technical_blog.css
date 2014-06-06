@@ -55,3 +55,10 @@ a {
 .bold {
 	font-weight: bold;
 }
+
+.code {
+	font-family: "Courier New", sans-serif;
+	color: #fc9ba1;
+	background-color: #DEDEDE;
+	padding: 10px;
+}
