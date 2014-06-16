@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora|Cookie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week3_technical_blog.css">
+		<title>Jennie @ DBC</title>
+	</head>
+	<body>
+		<header>
+				<div id="logo"><h1>Jennie Lee Chamberlin</h1></div>
+				<nav>
+					<ul>
+						<li><h2><a href="http://littleredninja.github.io/index.html" target="blank">Home</a></h2></li>
+						<li><h2><a href="https://github.com/littleredninja" target="blank">Github</a></h2></li>
+						<li><h2><a href="http://devbootcamp.com" target="blank">Dev Bootcamp</a></h2></li>
+				</nav>
+		</header>
+		<div id="container">
+			<h1 id="topic">Let's get classy</h1>
+			<h2 id="subtopic">and talk about classes.</h2>
+			<date>Sunday, June 15, 2014</date>
+			<img class="logo" src="images/ruby-logo.png">
+			<p>Classes are objects in Ruby that provide a template for other objects.  Creating classes allows us to group objects and methods, and provides a way for us to create objects quickly and with pre-defined properties, saving us a few steps when we want to make several objects with the same traits.</p>
+			<h3 class="blog">Creating Classes</h3>
+				<p>Creating classes is fun and easy!  Pick a topic, any topic, and we'll make it a class.  We'll start with something I like; cats.</p>
+				<p class="code">class Cat(name, size, color, fav_food)
+				<br>&nbsp;def initalize
+				<br>&nbsp;&nbsp;@name = name
+				<br>&nbsp;&nbsp;@size = size
+				<br>&nbsp;&nbsp;@color = color
+				<br>&nbsp;&nbsp;@fav_food = fav_food
+				<br>&nbsp;end
+				<br>end</p>
+				<p>Here we create a class of Cat, where each cat has a name, size, color and favorite food.  Every time we create a new cat, the cat will have these traits.  To make a new cat, all we need now is the following:</p>
+				<p class="code">bailey = Cat.new(Bailey, fat, orange, fish)</p>
+				<p>Now we can make our cats do things with methods inside our class.  Let's say we want the cat to meow, so we can make a method.</p>
+				<p class="code">class Cat
+				<br>&nbsp;def meow
+				<br>&nbsp;&nbsp;puts "#{@name} says meow!"
+				<br>&nbsp;end
+				<br>end</p>
+				<p>If you'd like to call the method, just call bailey.meow and Bailey will meow!</p>
+			<h3 class="blog">Instance Variables</h3>
+				<p>The @ symbol denotes an instance variable, which is a variable that is accessible for every instance of Cat, but not outside those instances.  To find out Bailey's size, color or favorite food, we simply need to call Bailey.fav_food and we find out that he likes fish.</p>
+		</div>
+
+	</body>
+</html>
