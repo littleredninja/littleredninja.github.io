@@ -1,26 +1,72 @@
 body {
-	font-family: "Georgia", sans-serif;
+	font-family: "Lora", sans-serif;
 /*	background: #b3fffa;*/
+}
+
+header {
+	position: fixed;
+	padding: 5px 10px;
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	background-color: rgba(235, 235, 235, .5);
+}
+
+#logo {
+	position: relative;
+	left: 2%;
+	float: left;
+}
+
+#logo h1 {
+	font-family: 'cookie', cursive;
+	color: gray;
+	font-size: 3em;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+
+nav {
+	position: relative;
+	right: 4%;
+	float: right;
+}
+
+nav li {
+	font-family: 'cookie', serif;
+	font-size: 1.5em;
+	display: inline-block;
+	margin: 10px 10px;
 }
 
 #container {
 	width: 75%;
 	margin: auto;
-	padding: 40px 20px 40px 20px;
+	padding: 80px 20px 40px 20px;
 	background: #ffffff;
 }
 
-#header {
-	font-style: bold;
+
+#topic {
+	font-family: "Georgia", sans-serif;
+	font-size: 2em;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	display: block;
 	color: #ff7373;
+	margin: 10px auto;
 }
 
-#subheader {
+#subtopic {
+	font-family: "Georgia", sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+	display: block;
 	color: #ff7373;
+	margin: 10px auto 20px auto;
 }
 
 date {
@@ -32,6 +78,7 @@ date {
 	margin: auto;
 	display: block;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .largeimg {
@@ -44,8 +91,17 @@ date {
 	text-align: center;
 }
 
-.blog {
+p {
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: "Georgia", sans-serif;
+	font-size: 1.17em;
+	font-weight: bold;
 	font-style: italic;
+	margin: 20px 0px;
 }
 
 a {
@@ -53,7 +109,12 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: 000;
+}
+
 .bold {
+	font-family: "Georgia", sans-serif;
 	font-weight: bold;
 }
 
@@ -62,5 +123,9 @@ a {
 	color: #fc9ba1;
 	background-color: #DEDEDE;
 	padding: 10px;
+}
+
+.blog li {
+	margin-bottom: 10px;
 }
 
