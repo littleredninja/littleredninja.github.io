@@ -123,9 +123,22 @@ a:hover {
 	color: #fc9ba1;
 	background-color: #DEDEDE;
 	padding: 10px;
+	line-height: 1.75;
+}
+
+.code span {
+	font-family: "Courier New", sans-serif;
+	color: #5C09B0;
+	background-color: #DEDEDE;
+	padding: 10px;
+	font-style: italic;
 }
 
 .blog li {
 	margin-bottom: 10px;
+}
+
+#container li {
+	line-height: 1.5;
 }
 

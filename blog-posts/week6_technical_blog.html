@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora|Cookie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week3_technical_blog.css">
+		<title>Jennie @ DBC</title>
+	</head>
+	<body>
+		<header>
+				<div id="logo"><h1>Jennie Lee Chamberlin</h1></div>
+				<nav>
+					<ul>
+						<li><h2><a href="http://littleredninja.github.io/index.html" target="blank">Home</a></h2></li>
+						<li><h2><a href="https://github.com/littleredninja" target="blank">Github</a></h2></li>
+						<li><h2><a href="http://devbootcamp.com" target="blank">Dev Bootcamp</a></h2></li>
+				</nav>
+		</header>
+		<div id="container">
+			<h1 id="topic">Let's get technical</h1>
+			<h2 id="subtopic">and talk about blocks, procs and lambdas</h2>
+			<date>Sunday, June 22, 2014</date>
+			<img class="logo" src="images/ruby-logo.png">
+			<p>Blocks, procs and lambdas, besides being fun to say, are bits of code that perform an action.  While these three are similar, they have a few differences.</p>
+			<h3 class="blog">Blocks</h3>
+				<p>We'll start with blocks, which is a block of code that performs an action.  They are usually written between curly braces, or between do and end. Several ruby methods take blocks, so if you've been studying Ruby for a little bit, blocks should look rather familiar to you.</p>
+				<p class="code">books = ["The Great Gatsby", "A Tree Grows in Brooklyn", "Pride and Predjudice"]
+				<br>books.each { |book| puts "#{book} is a great book!" }
+				<span><br>&nbsp;==> "The Great Gatsby is a great book!"
+				<br>&nbsp;==> "A Tree Grows in Brooklyn is a great book!"
+				<br>&nbsp;==> "Pride and Prejudice is a great book!"</span>
+
+				<p>The code between the curly braces, or |book| puts "#{book} is a great book!", is a block!  Blocks are not objects, and so they must be rewritten each time you need them.  This gets a bit repetitive if you need to use a block more than once, but that's when we could use a proc.</p>
+			<h3 class="blog">Procs</h3>
+				<p>Procs are essentially named blocks.  Unlike blocks, procs are an object in Ruby and can be used more than once.  This is helpful if you'll need to use your block more than once.  </p>
+				<p class="code">books = ["The Great Gatsby", "A Tree Grows in Brooklyn", "Pride and Predjudice"]
+				<br>declare = Proc.new { |item| puts "#{item} is great!" }
+				<br>books.each(&declare)
+				<span><br>&nbsp;==> "The Great Gatsby is great!"
+				<br>&nbsp;==> "A Tree Grows in Brooklyn is great!"
+				<br>&nbsp;==> "Pride and Prejudice is great!"</span>
+				<br>movies = ["Ferris Bueller", "The Blues Brothers", "Chicago"]
+				<br>movies.each(&declare)
+				<span><br>&nbsp;==> "Ferris Bueller is great!"
+				<br>&nbsp;==> "The Blues Brothers is great!"
+				<br>&nbsp;==> "Chicago is great!"</span></p>
+				<p>To make a proc, you have to use Proc.new.  To use a proc, make sure you write the name of the proc preceded by an ampersand & to show that it's a proc.</p>
+
+			<h3 class="blog">Lambdas</h3>
+				<p>Lambdas are similar to procs, but with a few differences.  They perform the same actions as procs, and are also objects in Ruby.  You declare them by using the keyword lambda, and call them using the ampersand &.  </p>
+				<p class="code">books = ["The Great Gatsby", "A Tree Grows in Brooklyn", "Pride and Predjudice"]
+				<br>declare = lambda { |item| puts "#{item} is great!" }
+				<br>books.each(&declare)
+				<span><br>&nbsp;==> "The Great Gatsby is great!"
+				<br>&nbsp;==> "A Tree Grows in Brooklyn is great!"
+				<br>&nbsp;==> "Pride and Prejudice is great!"</span></p>
+
+				<p>Lambdas differ from procs however, in that lambdas will check the number of arguments passed to it, while a proc does not.  A proc will merely ignore extra arguments or return nil for missing arguments, while a lambda returns an argument error.</p>
+				<p>Also, lambdas act differently within methods than blocks.  If you call a lambda within a method, the lambda will pass control back to a method after executing, while procs will return immediately.</p>
+				<p class="code">def better_proc
+				<br>&nbsp;&nbsp;movies_win = Proc.new { return "Movies are better than books!" }
+				<br>&nbsp;&nbsp;movies_win.call
+				<br>&nbsp;&nbsp;return "Books are better than movies!"
+				<span><br>&nbsp;==> "Movies are better than books!"</span>
+				<br>def better_lambda
+				<br>&nbsp;&nbsp;books_win = lambda { return "Movies are better than books!" }
+				<br>&nbsp;&nbsp;books_win.call
+				<br>&nbsp;&nbsp;return "Books are better than movies!"
+				<span><br>&nbsp;==> "Books are better than movies!"</span></p>
+			<h3 class="blog">Read more about Blocks, Procs and Lambdas from other Rubyists</h3>
+				<ul>
+					<li><a href="http://www.codecademy.com/courses/ruby-beginner-en-L3ZCI/0/1?curriculum_id=5059f8619189a5000201fbcb" target="blank">Loveable Codecademy's class on Blocks, Procs and Lambdas</a></li>
+					<li><a href="http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/18-blocks/lessons/64-blocks-procs-lambdas" target="blank">Ruby Monk breaks it down for us</a></li>
+					<li><a href="http://code.tutsplus.com/tutorials/ruby-on-rails-study-guide-blocks-procs-and-lambdas--net-29811" target="blank">Readable article on Blocks, Procs and Lambdas</a></li>
+					<li><a href="http://www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/" target="blank">Slightly-confusing-but-may-be-helpful-to-you article on Blocks, Procs and Lambdas</a></li>
+					
+					
+				</ul>
+
+	</body>
+</html>
