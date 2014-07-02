@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora|Cookie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week3_technical_blog.css">
+		<title>Jennie @ DBC</title>
+	</head>
+	<body>
+		<header>
+				<div id="logo"><h1>Jennie Lee Chamberlin</h1></div>
+				<nav>
+					<ul>
+						<li><h2><a href="http://littleredninja.github.io/index.html" target="blank">Home</a></h2></li>
+						<li><h2><a href="https://github.com/littleredninja" target="blank">Github</a></h2></li>
+						<li><h2><a href="http://devbootcamp.com" target="blank">Dev Bootcamp</a></h2></li>
+				</nav>
+		</header>
+		<div id="container">
+			<h1 id="topic">Let's get technical</h1>
+			<h2 id="subtopic">and talk about database query optimization</h2>
+			<date>Tuesday, July 1, 2014</date>
+			<img class="logo" src="http://awayatechnology.com/images/technologies/4.png">
+			<p>Databases are useful and awesome!  But accessing information from a large one can take lots of time, and we all know time is money.  Keeping an eye on a few details when designing a database can save time when searching for a methophorical needle in a digital haystack.</p>
+			<p>Queries from databases can take anywhere from less than a second to several hours depending on what your looking for.  The purpose of optimization is to make the process as streamlined as possible, thus finding the desired info in the fastest time possible.</p>
+			<h3 class="blog">Schema design</h3>
+				<p>Staring with a organized schema makes all the difference in database design.  A well-designed schema will pay off by keeping your database from expanding unnecessarily.</p>
+			<h3 class="blog">Queries</h3>
+				<p>When writing queries, try to make them as specific as possible.  Don't use SELECT * unless it's absolutely necessary; listing the exact fields you need can save you precious time.</p>
+				<p>Be judicious with your use of joins.  These can be time-consuming, so make sure they are worth it.  This goes back to making sure you have a well-designed schema, but it also means simply ensuring you don't join to unused tables.</p>
+				<p>Lastly, make your queries as concise as possible.  Your WHERE statement is very important here.  Drilling down to the exact information you'll need will save time and bandwidth.  Organize your subqueries and use search terms properly for the most timely results.</p>
+				
+			<h3 class="blog">Read more about SQL Query Optimization</h3>
+				<ul>
+					<li><a href="http://beginner-sql-tutorial.com/sql-query-tuning.htm" target="blank">Nice concrete examples of SQL Query optimization edits</a></li>
+					<li><a href="http://en.wikipedia.org/wiki/Query_optimization" target="blank">Why optimization is cool</a></li>
+					
+					
+				</ul>
+
+	</body>
+</html>
