@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lora|Cookie' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/week1_technical_blog.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/week3_technical_blog.css">
+		<title>Jennie @ DBC</title>
+	</head>
+	<body>
+		<header>
+				<div id="logo"><h1>Jennie Lee Chamberlin</h1></div>
+				<nav>
+					<ul>
+						<li><h2><a href="http://littleredninja.github.io/index.html" target="blank">Home</a></h2></li>
+						<li><h2><a href="https://github.com/littleredninja" target="blank">Github</a></h2></li>
+						<li><h2><a href="http://devbootcamp.com" target="blank">Dev Bootcamp</a></h2></li>
+				</nav>
+		</header>
+		<div id="container">
+			<h1 id="topic">Let's get technical</h1>
+			<h2 id="subtopic">and talk about regular expressions</h2>
+			<date>Tuesday, July 1, 2014</date>
+			<img class="largeimg" src="http://imgs.xkcd.com/comics/regular_expressions.png">
+			<p>Regular expressions, abbreviated to REGEX or REGEXP, is special text used to search for patterns.  A simple example would be using a wildcard like *.txt to search for all text files, only REGEX is more powerful and can be used to search for more complex patterns.</p>
+			<p>While it often looks like a confusing string of characters, REGEX is actually made of simple codes to represent different patterns.  They can be strung together and used to search for a wide variety of characters and even spaces.REGEX can help simplify code, and often several lines of code can be condensed to just one with a simple REGEX.</p>
+			<h3 class="blog">Getting started</h3>
+				<p>REGEX expressions in Ruby begin and end with a / character.  A very basic REGEX expression can search for a particular character.  Simply place your character between the forward slashes and you'll have a REGEX!</p>
+				<p><span class="regex">/A/</span> for example, will search for a capital A.<p>
+				<p><span class="regex">/a/</span> for example, will search for a lower-case a.<p>
+			<h3 class="blog">Other searches</h3>
+				<p>You can also search for variations, which can be useful when dealing with hard-to-predict user input.</p>
+				<p><span class="regex">/gr[ea]y/</span> for example, will search for either grey or gray.<p>
+				<p>A dot works much like a star in a wildcard search, and will match any character except a line break character.  For example, <span class="regex">/gr.y/</span> will also return grey or gray, but will also return gr%y, so it's best used sparingly.</p>
+			<h3 class="blog">Possibilities</h3>
+				<p>Not only can you match specific characters, but you can match words, spaces, digits and more.</p>
+				<p><span class="regex">/\w/</span> will match any word.
+				<p><span class="regex">/\d/</span> will match any single digit.
+				<p><span class="regex">/\s/</span> will match any space.
+				<p>There is a vast library of possibilities for matching.  With so many options, the best way to find as many as possible is to play around and experiment with them!</p>
+			<h3 class="blog">Learn more about Regular Expressions</h3>
+				<ul>
+					<li><a href="http://rubular.com/" target="blank">Play around with Ruby REGEX and see what works!</a></li>
+					<li><a href="http://www.regular-expressions.info/quickstart.html" target="blank">A quick guide to REGEX</a></li>
+					<li><a href="http://www.regular-expressions.info/ruby.html" target="blank">More about REGEX in Ruby</a></li>
+					<li><a href="http://www.ruby-doc.org/core-2.1.1/Regexp.html" target="blank">Ruby docs about REGEX</a></li>
+				</ul>
+
+	</body>
+</html>

@@ -86,7 +86,8 @@ date {
 	width: 400px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 2px solid gray;
 	text-align: center;
 }
@@ -142,3 +143,8 @@ a:hover {
 	line-height: 1.5;
 }
 
+.regex {
+	font-family: "Courier New", sans-serif;
+	color: #5C09B0;
+	background-color: #DEDEDE;
+}
