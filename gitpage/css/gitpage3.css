@@ -1,0 +1,57 @@
+body {
+	background-color: #46a7dd;
+	font-family: 'Londrina Solid', sans-serif;
+}
+
+header {
+	font-size: 2.3em;
+	color: #ffffff;
+	margin-top: 30px;
+	text-align: center;	
+}
+
+#camera {
+	display: inline-block;
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#camera img {
+	display: block;
+	width: 175px;
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+#nav {
+	display: inline-block;
+	width: 50%;
+	float: right;
+	font-size: 1.75em;
+	color: #ffffff;
+}
+
+#social-media-box {
+	display: none;  
+/*	display:flex;
+*/	clear: both;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content:space-between;
+}
+
+.media-circle {
+	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: 20px 3%;
+}
+
+.media-circle img {
+	margin-left: auto;
+	margin-right: auto;
+}

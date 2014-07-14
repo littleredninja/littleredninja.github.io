@@ -1,0 +1,87 @@
+/*css stylings by Jennie Chamberlin 
+www.jenniechamberlin.com
++JMJ+*/
+
+body {
+	background-color: #46a7dd;
+	font-family: 'Trocchi';
+}
+
+#container {
+	margin: 20px;
+}
+
+#left-side-image {
+	display: inline-block;
+	margin-top: 50px;
+}
+
+#left-side-image img {
+	position: relative;
+	margin-left: 30px;
+}
+
+#home {
+	position: absolute;
+	top: 75px;
+	left: 190px;
+}
+
+#blog {
+	position: absolute;
+	top: 240px;
+	left: 200px;
+}
+
+#projects {
+	position: absolute;
+	top: 420px;
+	left: 185px;
+	font-size: 1.25em;
+}
+
+h1 {
+	font-size: 4.5em;
+}
+
+#header {
+	display: inline-block;
+	float: right;
+	width: 60%;
+	margin-right: 40px;
+	font-family: 'Londrina Solid', 'Trocchi';
+	color: #ffffff;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#featured-window {
+	position: relative;
+	float: right;
+	top: -450px;
+	margin-right: 40px;
+	width: 55%;
+	border: 3px solid #000000;
+	border-radius: 20px;
+	padding: 2%;
+}
+
+#social-media-box {
+	position: relative;
+	float: right;
+	top: -440px;
+	width: 60%;
+	float: right;
+	margin: 10px 40px;
+	text-align: center;
+}
+
+.media-circle {
+	display: inline-block;
+	background-color: #ffffff;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: 0px 20px;
+}
+
